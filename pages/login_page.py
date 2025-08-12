@@ -17,6 +17,6 @@ class login_page:
         wait.until(EC.visibility_of_element_located(LoginLocator.verify_btn_clicked_loc))
 
         element=self.driver.find_element(*LoginLocator.verify_btn_clicked_loc)
-        text!=element.text
+        text=element.text
 
         assert text=="Request OTP","Element not found"
